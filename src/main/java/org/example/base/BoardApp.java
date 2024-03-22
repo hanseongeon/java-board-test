@@ -27,6 +27,8 @@ public class BoardApp {
                 articleController.detail();
             }else if(cmd.equals("search")){
                 articleController.search();
+            }else{
+                System.out.println("잘못된 명령어 입니다.");
             }
         }
     }
