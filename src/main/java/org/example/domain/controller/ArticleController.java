@@ -80,7 +80,7 @@ public class ArticleController {
         System.out.print("검색 키워드를 입력해주세요 : ");
         String keyword = sc.nextLine();
         ArrayList<Article> articles = articleRepository.findKeywordByArticle(keyword);
-        if(articles == null){
+        if(articles.size() == 0){
             System.out.println("검색 결과가 없습니다.");
             return;
         }

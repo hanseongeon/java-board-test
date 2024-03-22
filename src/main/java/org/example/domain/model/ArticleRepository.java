@@ -45,7 +45,7 @@ public class ArticleRepository {
     public void updateArticle(Article article,String title,String content){
         article.setTitle(title);
         article.setContent(content);
-        article.setContent(commonUtill.getCurrentTime());
+        article.setRegDate(commonUtill.getCurrentTime());
     }
 
     public void deleteArticle(Article article){
